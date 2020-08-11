@@ -6,7 +6,7 @@
     <artifactId>uni-resolver-driver-did-bid</artifactId>
     <packaging>${packaging.type}</packaging>
     <name>uni-resolver-driver-did-bid</name>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <parent>
         <groupId>decentralized-identity</groupId>
