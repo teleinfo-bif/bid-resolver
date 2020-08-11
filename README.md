@@ -17,9 +17,9 @@ did:bid:6cc796b8d6e2fbebc9b3cf9e
 ## Build and Run (Docker)
 
 ```
-docker build -f ./docker/Dockerfile . -t universalresolver/driver-did-bid
-docker run -p 8080:8080 universalresolver/driver-did-bid
-curl -X GET http://localhost:8080/1.0/identifiers/did:bid:3acdafe161ef702033bdf895
+docker build -f ./docker/Dockerfile . -t teleinfo/driver-did-bid
+docker run -p 8080:8080 teleinfo/driver-did-bid
+curl -X GET http://localhost:8080/1.0/identifiers/did:bid:6cc796b8d6e2fbebc9b3cf9e
 ```
 
 ## Build (native Java)
