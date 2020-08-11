@@ -42,4 +42,5 @@ The driver returns the following metadata in addition to a DID document:
 * `creation`: The transaction information for creating DID.
 * `update`:  The transaction information for updating DID.
 * `currentBlock`:  The current block information for BIF CHAIN.
+* `proof`:  The proof of DID.
 * `authentication`:  The authentication information for DID.

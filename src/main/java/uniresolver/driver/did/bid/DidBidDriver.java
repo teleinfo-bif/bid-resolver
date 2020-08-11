@@ -85,6 +85,7 @@ public class DidBidDriver implements Driver {
             JsonElement creation = jsonDataObject == null ? null : jsonDataObject.get("creation");
             JsonElement update = jsonDataObject == null ? null : jsonDataObject.get("update");
             JsonElement currentBlock = jsonDataObject == null ? null : jsonDataObject.get("currentBlock");
+            JsonElement proof = jsonDataObject == null ? null : jsonDataObject.get("proof");
             List<PublicKey> publicKeys = new ArrayList<PublicKey>();
             JsonArray publicKey = jsonDataObject == null ? null : jsonDataObject.getAsJsonArray("publicKey");
             if (publicKey != null) {
@@ -121,6 +122,7 @@ public class DidBidDriver implements Driver {
             methodMetadata.put("creation", gson.fromJson(creation, Map.class));
             methodMetadata.put("update", gson.fromJson(update, Map.class));
             methodMetadata.put("currentBlock", gson.fromJson(currentBlock, Map.class));
+            methodMetadata.put("proof", proof == null ? "" : gson.fromJson(proof, Map.class));
             methodMetadata.put("authentication", auth == null ? null : gson.fromJson(auth, ArrayList.class));
             DIDDocument didDocument = DIDDocument.build(context, identifier, publicKeys, null, services);
 
